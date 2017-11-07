@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo">
-          <img src="http://placehold.it/150x100" alt="Логотип сайта Device">
+          <img src="img/index-logo.svg" alt="Логотип сайта Device"><!--Сделал лого текстом-->
         </a>
         <ul class="user-navigation">
           <li><input type="text" name="search" id="search" value="Поиск по сайту"></li>
@@ -90,15 +90,15 @@
         </div>
       </section>
       <section class="navigation">
-        <h2>Категории товаров</h2>
-        <nav class="main-menu">
+        <h2>Категории товаров</h2><!--"как ты планируешь делать прямоугольник с картинкой?" Тегам <li> добавил класс .navigation-item чтобы было потом удобнее стилизовать текст, а так же класс .navigation-picture-style для <img>, для дальнейшей стилизации картинок. Заглянув немного наперед, я так понимаю, что эти картинки в формате svg, а вставлять их нужно уже иначе, но эту тему еще не прошел. Надеюсь, просто как описание идеи реализации подойдет так, а уже при следующем задании "Подготовка графики личного проекта" сделаю правильно-->
+        <nav class="navigation-menu">
           <ul>
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
+            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="VR шлемы">Виртуальная реальность</a></li>
+            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Селфи палки">Моноподы для селфи</a></li>
+            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Камеры">Экшн камеры</a></li>
+            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Браслеты">Фитнес-браслеты</a></li>
+            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Часы">Умные часы</a></li>
+            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Дроны">Квадрокоптеры</a></li>
           </ul>
         </nav>
       </section>
@@ -111,45 +111,40 @@
             <li><a class="btn credit" href="#">Кредит</a></li>
           </ul>
         </nav>
-        <ul class="description-of-services">
-          <li class="delivery">
+        <ul class="description-of-services"> <!--Добавил для слайдов общий класс .service-description для более удобной стилизации. Так же добавил <img> для картинок слайдов и задал им соответствующие классы-->
+          <li class="service-description delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <img class="delivery-img" src="#" alt="изображение курьера">
           </li>
-          <li class="warranty">
+          <li class="service-description warranty">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
+            <img class="usc-img" src="#" alt="изображение общения с ЦПП">
           </li>
-          <li class="credit">
+          <li class="service-description credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
             условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <img class="credit-img" src="#" alt="изображение человека берущего кредит">
           </li>
         </ul>
       </section>
-      <section class="logotypes">
+      <section class="logotypes"><!--Убрал дивы, для <img> добавил общий класс и класс по названию бренда.-->
         <h2>Представленные бренды</h2>
-        <div class="logo-dji">
           <a href="#">
-            <img src="#" alt="dji">
+            <img class="logo logo-dji" src="#" alt="dji">
           </a>
-        </div>
-        <div class="logo-spgadgets">
           <a href="#">
-            <img src="#" alt="spgadgets">
+            <img class="logo logo-spgadgets" src="#" alt="spgadgets">
           </a>
-        </div>
-        <div class="logo-GoPro">
           <a href="#">
-            <img src="#" alt="GoPro">
+            <img class="logo logo-GoPro" src="#" alt="GoPro">
           </a>
-        </div>
-        <div class="logo-vive">
           <a href="#">
-            <img src="#" alt="vive">
+            <img class="logo logo-vive" src="#" alt="vive">
           </a>
-        </div>
       </section>
       <section class="about us">
         <h2>О нас</h2>
@@ -176,21 +171,20 @@
     <footer class="main-footer">
       <nav class="footer-user-navigation">
         <a class="footer-logo">
-          <img src="http://placehold.it/150x100" alt="Логотип сайта Device">
+          <img src="#" alt="Логотип сайта Device">
         </a>
         <ul class="user-navigation">
           <li class="login-link-footer"><a href="#">Войти</a></li>
           <li class="compare-link-footer"><a href="#">Сравнить</a></li>
           <li class="basket-link-footer"><a href="#">Корзина</a></li>
         </ul>
-      </nav>
       <p class="adress">г. Москва, ул. Строителей, 15</p>
       <ul class="site-navigation-footer">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      <p class="number">Тел.: +7 (495) 495-95-95</p>
+      <p class="number"><a class="contact-number" href="#">Тел.: +7 (495) 495-95-95</a></p><!--Сделал номер телефона ссылкой-->
       <div class="footer-social">
         <ul>
           <li><a class="social-btn" href="#">Фейсбук</a></li>
@@ -203,6 +197,7 @@
           <img src="#" alt="Разработано: HTML Academy">
         </a>
       </div>
+      </nav><!--"Передвинул" закрывающий nav из средены в конец навигации футера-->
     </footer>
     
     <section class="modal modal-login">

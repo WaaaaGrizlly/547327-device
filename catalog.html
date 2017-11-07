@@ -42,76 +42,85 @@
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Форма-->
-      </section>
-      <b>Сортировка</b>
-      <ul class="sorting">
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По популярности</li>
-      </ul>
+        <div class="goods-filter">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <!--Форма-->
+        </div>
+        <div class="sorting">
+          <b>Сортировка</b>
+          <ul class="sorting-item">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+            <li><img src="#" alt="Прокрутить список товаров вверх"></li>
+            <li><img src="#" alt="Прокрутить список товаров вниз"></li>
+          </ul>
+        </div>
+      </section> <!--"тебе понадобится обертка для этого блока" В секшин обернул и "сортировку" а "фильтр товаров" и "сортировку" обернул в дивы с классами. Содержание списка .sorting-item сделал ссылками. Сделал разметку напраления сортировки-->
+      <!---->
+      <!--Заголовок и картинку товара поменял местами, теперь заголовок под картинкой, в соответствии с макетом. Обернул спанами скрытую менюшку, которая появляется при наведении на изображение товара-->
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">Любительская селфи-палка</a>
-            </h3>
             <p class="catalog-item-image"> 
               <img src="img/product-1.jpg" alt="Любительская селфи-палка">
             </p>
+            <h3>
+              <a href="catalog-item.html">Любительская селфи-палка</a>
+            </h3>
             <div class="hover">
-              <!--При наведении на картинку товара должно появляться "меню", не знаю как правильно его разметить-->
-              <a class="item-hover-btn" href="#">В корзину</a>
-              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
+              <span><a class="item-hover-btn" href="#">В корзину</a></span>
+              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
             </div>
             <b>500 руб</b>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">Профессиональная селфи-палка</a>
-            </h3>
             <p class="catalog-item-image"> 
               <img src="img/product-1.jpg" alt="Любительская селфи-палка">
             </p>
+            <h3>
+              <a href="catalog-item.html">Профессиональная селфи-палка</a>
+            </h3>
             <div class="hover">
-              <a class="item-hover-btn" href="#">В корзину</a>
-              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
+              <span><a class="item-hover-btn" href="#">В корзину</a></span>
+              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
             </div>
             <b>1500 руб</b>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">Непотопляемая селфи-палка</a>
-            </h3>
             <p class="catalog-item-image"> 
               <img src="img/product-1.jpg" alt="Любительская селфи-палка">
             </p>
+            <h3>
+              <a href="catalog-item.html">Непотопляемая селфи-палка</a>
+            </h3>
             <div class="hover">
-              <a class="item-hover-btn" href="#">В корзину</a>
-              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
+              <span><a class="item-hover-btn" href="#">В корзину</a></span>
+              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
             </div>
             <b>2500 руб</b>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">Селфи-палка "Следуй за мной"</a>
-            </h3>
             <p class="catalog-item-image"> 
               <img src="img/product-1.jpg" alt="Любительская селфи-палка">
             </p>
+            <h3>
+              <a href="catalog-item.html">Селфи-палка "Следуй за мной"</a>
+            </h3>
             <div class="hover">
-              <a class="item-hover-btn" href="#">В корзину</a>
-              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
+              <span><a class="item-hover-btn" href="#">В корзину</a></span>
+              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
             </div>
             <b>4900 руб</b>
           </li>
         </ul>
-        <ul class="pagination-list">
+        <ul class="pagination-list"><!--Добавил "вперед" "назад"-->
+          <li class="pagination-control pagination-back"><a href="#">Назад</a></li>
           <li class="pagination-item pagination-item-current">1</li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-control pagination-forward"><a href="#">Вперед</a></li>
         </ul>
       </section>
     </main>
