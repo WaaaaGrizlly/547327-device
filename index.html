@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo">
-          <img src="img/index-logo.svg" alt="Логотип сайта Device"><!--Сделал лого текстом-->
+          <img src="img/index-logo.svg" alt="Логотип сайта Device">
         </a>
         <ul class="user-navigation">
           <li><input type="text" name="search" id="search" value="Поиск по сайту"></li>
@@ -90,15 +90,15 @@
         </div>
       </section>
       <section class="navigation">
-        <h2>Категории товаров</h2><!--"как ты планируешь делать прямоугольник с картинкой?" Тегам <li> добавил класс .navigation-item чтобы было потом удобнее стилизовать текст, а так же класс .navigation-picture-style для <img>, для дальнейшей стилизации картинок. Заглянув немного наперед, я так понимаю, что эти картинки в формате svg, а вставлять их нужно уже иначе, но эту тему еще не прошел. Надеюсь, просто как описание идеи реализации подойдет так, а уже при следующем задании "Подготовка графики личного проекта" сделаю правильно-->
+        <h2>Категории товаров</h2><!--Если изображение не контентное, значит оно декоративное, а значит его можно стилизовать через css. Поэтому для каждого элемента списка задал доп.класс и уже с его помощью буду в дальнейшем  стилизовать квадраты с изображениями. Просто я пошел "не туда" из-за того, что изображение тоже ссылка, а как его реализовать через css и сделать ссылкой у меня в голове что-то не отложилось-->
         <nav class="navigation-menu">
           <ul>
-            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="VR шлемы">Виртуальная реальность</a></li>
-            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Селфи палки">Моноподы для селфи</a></li>
-            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Камеры">Экшн камеры</a></li>
-            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Браслеты">Фитнес-браслеты</a></li>
-            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Часы">Умные часы</a></li>
-            <li class="navigation-item"><a href="#"><img class="navigation-picture-style" src="#" alt="Дроны">Квадрокоптеры</a></li>
+            <li class="navigation-item nav-vr"><a href="#">Виртуальная реальность</a></li>
+            <li class="navigation-item nav-monopods"><a href="#">Моноподы для селфи</a></li>
+            <li class="navigation-item nav-cameras"><a href="#">Экшн камеры</a></li>
+            <li class="navigation-item nav-bracelets"><a href="#">Фитнес-браслеты</a></li>
+            <li class="navigation-item nav-clock"><a href="#">Умные часы</a></li>
+            <li class="navigation-item nav-drone"><a href="#">Квадрокоптеры</a></li>
           </ul>
         </nav>
       </section>
@@ -111,7 +111,7 @@
             <li><a class="btn credit" href="#">Кредит</a></li>
           </ul>
         </nav>
-        <ul class="description-of-services"> <!--Добавил для слайдов общий класс .service-description для более удобной стилизации. Так же добавил <img> для картинок слайдов и задал им соответствующие классы-->
+        <ul class="description-of-services">
           <li class="service-description delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -131,19 +131,19 @@
           </li>
         </ul>
       </section>
-      <section class="logotypes"><!--Убрал дивы, для <img> добавил общий класс и класс по названию бренда.-->
+      <section class="logotypes">
         <h2>Представленные бренды</h2>
           <a href="#">
-            <img class="logo logo-dji" src="#" alt="dji">
+            <img class="logo" src="#" alt="dji">
           </a>
           <a href="#">
-            <img class="logo logo-spgadgets" src="#" alt="spgadgets">
+            <img class="logo" src="#" alt="spgadgets">
           </a>
           <a href="#">
-            <img class="logo logo-GoPro" src="#" alt="GoPro">
+            <img class="logo" src="#" alt="GoPro">
           </a>
           <a href="#">
-            <img class="logo logo-vive" src="#" alt="vive">
+            <img class="logo" src="#" alt="vive">
           </a>
       </section>
       <section class="about us">
@@ -184,7 +184,8 @@
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      <p class="number"><a class="contact-number" href="#">Тел.: +7 (495) 495-95-95</a></p><!--Сделал номер телефона ссылкой-->
+      </nav><!--Надеюсь, в этот раз я правильно закрыл навигацию:)-->
+      <p class="number"><a class="contact-number" href="#">Тел.: +7 (495) 495-95-95</a></p>
       <div class="footer-social">
         <ul>
           <li><a class="social-btn" href="#">Фейсбук</a></li>
@@ -197,7 +198,6 @@
           <img src="#" alt="Разработано: HTML Academy">
         </a>
       </div>
-      </nav><!--"Передвинул" закрывающий nav из средены в конец навигации футера-->
     </footer>
     
     <section class="modal modal-login">

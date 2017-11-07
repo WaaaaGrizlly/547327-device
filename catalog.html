@@ -52,13 +52,13 @@
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
-            <li><img src="#" alt="Прокрутить список товаров вверх"></li>
-            <li><img src="#" alt="Прокрутить список товаров вниз"></li>
           </ul>
+          <div class="sort-direction"> <!--Переосмыслил подход к прокрутке вверх/вниз-->
+            <a class="sort-direction-up" href="#">Вверх</a>
+            <a class="sort-direction-down" href="#">Вниз</a>
+          </div>
         </div>
-      </section> <!--"тебе понадобится обертка для этого блока" В секшин обернул и "сортировку" а "фильтр товаров" и "сортировку" обернул в дивы с классами. Содержание списка .sorting-item сделал ссылками. Сделал разметку напраления сортировки-->
-      <!---->
-      <!--Заголовок и картинку товара поменял местами, теперь заголовок под картинкой, в соответствии с макетом. Обернул спанами скрытую менюшку, которая появляется при наведении на изображение товара-->
+      </section> 
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов</h2>
         <ul class="catalog-list">
@@ -70,10 +70,10 @@
               <a href="catalog-item.html">Любительская селфи-палка</a>
             </h3>
             <div class="hover">
-              <span><a class="item-hover-btn" href="#">В корзину</a></span>
-              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
+              <a class="item-hover-btn" href="#">В корзину</a>
+              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
             </div>
-            <b>500 руб</b>
+            <span><b>500 руб</b></span>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image"> 
@@ -83,10 +83,10 @@
               <a href="catalog-item.html">Профессиональная селфи-палка</a>
             </h3>
             <div class="hover">
-              <span><a class="item-hover-btn" href="#">В корзину</a></span>
-              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
+              <a class="item-hover-btn" href="#">В корзину</a>
+              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
             </div>
-            <b>1500 руб</b>
+            <span><b>1500 руб</b></span>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image"> 
@@ -96,10 +96,10 @@
               <a href="catalog-item.html">Непотопляемая селфи-палка</a>
             </h3>
             <div class="hover">
-              <span><a class="item-hover-btn" href="#">В корзину</a></span>
-              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
+              <a class="item-hover-btn" href="#">В корзину</a>
+              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
             </div>
-            <b>2500 руб</b>
+            <span><b>2500 руб</b></span>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image"> 
@@ -109,15 +109,15 @@
               <a href="catalog-item.html">Селфи-палка "Следуй за мной"</a>
             </h3>
             <div class="hover">
-              <span><a class="item-hover-btn" href="#">В корзину</a></span>
-              <span><a class="item-hover-compare" href="#">Добавить к сравнению</a></span>
+              <a class="item-hover-btn" href="#">В корзину</a>
+              <a class="item-hover-compare" href="#">Добавить к сравнению</a>
             </div>
-            <b>4900 руб</b>
+            <span><b>4900 руб</b></span>
           </li>
         </ul>
-        <ul class="pagination-list"><!--Добавил "вперед" "назад"-->
+        <ul class="pagination-list"><!--ссылка и для первой страницы-->
           <li class="pagination-control pagination-back"><a href="#">Назад</a></li>
-          <li class="pagination-item pagination-item-current">1</li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-control pagination-forward"><a href="#">Вперед</a></li>
