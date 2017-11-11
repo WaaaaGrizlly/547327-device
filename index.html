@@ -10,8 +10,11 @@
         <a class="header-logo">
           <img src="img/logo.png" width="164" height="36" alt="Логотип сайта Device">
         </a>
+        <div class="search-form">
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </div>
         <ul class="user-navigation">
-          <li><input type="text" name="search" id="search" value="Поиск по сайту"></li>
           <li class="login-link"><a href="#">Войти</a></li>
           <li class="compare-link"><a href="#">Сравнить</a></li>
           <li class="basket-link"><a href="#">Корзина</a></li>
@@ -90,7 +93,7 @@
         </div>
       </section>
       <section class="navigation">
-        <h2>Категории товаров</h2><!--Если изображение не контентное, значит оно декоративное, а значит его можно стилизовать через css. Поэтому для каждого элемента списка задал доп.класс и уже с его помощью буду в дальнейшем  стилизовать квадраты с изображениями. Просто я пошел "не туда" из-за того, что изображение тоже ссылка, а как его реализовать через css и сделать ссылкой у меня в голове что-то не отложилось-->
+        <h2>Категории товаров</h2>
         <nav class="navigation-menu">
           <ul>
             <li class="navigation-item nav-vr"><a href="#">Виртуальная реальность</a></li>
@@ -197,16 +200,33 @@
       </div>
     </footer>
     
-    <section class="modal modal-login">
+    <section class="modal modal-write-us">
       <h2>Напишите нам</h2>
       <p>Ваше имя, email и текст письма.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя:</label><br>
+          <input class="entry-field" type="text" name="name" id="name"  placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="email">Ваш email:</label><br>
+          <input class="entry-field" type="text" name="email" id="email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="letter-text">Текст письма:</label><br>
+          <textarea class="entry-field" name="letter-text" id="letter-text" rows="8" cols="40" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     
     <section class="modal modal-map">
-      <h2 class="visually-hidden">Карта</h2>
-      <span class="modal-close">x</span>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
