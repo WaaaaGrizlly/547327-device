@@ -1,0 +1,580 @@
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroylight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  color: #464646;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation{
+  background-color: #f7e296;
+}
+
+.search{
+  border: none;
+  background-color: transparent;
+}
+
+.user-navigation {
+  font-size: 15px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.site-navigation {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: #000000;
+}
+
+.hidden-catalog-menu{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #000000;
+  display: none;
+}
+
+.user-navigation,
+.site-navigation,
+.hidden-catalog-menu{
+  list-style: none;
+}
+
+.user-navigation a,
+.site-navigation a,
+.hidden-catalog-menu a{
+  color: #000000;
+}
+
+.user-navigation a:hover,
+.site-navigation a:hover,
+.hidden-catalog-menu a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active,
+.site-navigation a:active,
+.hidden-catalog-menu a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog:hover .hidden-catalog-menu{
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 11px 0;
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn::after {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+  border: 1px solid;
+  border-color: #f4d361 #f1c83a;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  top: 0;
+  height: 100%;
+  border: none;
+  transition: 0.3s;
+}
+
+.normal-button{
+  background-color: transparent;
+  border: none;
+  width: 220px;
+}
+
+.normal-button:focus{
+  outline: none;
+}
+
+.item-hover-btn{
+  background-color: transparent;
+  border: none;
+  width: 200px;
+}
+
+.item-hover-btn:focus{
+  outline: none;
+}
+
+h2{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.product-detail td{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+.characteristics-name td{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+.navigation-menu ul{
+  list-style: none;
+}
+
+.navigation-item a{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.01;
+  font-weight: 800;
+  color: #000000;
+}
+
+.nav-background {
+  background-color: #f7e296;
+  width: 160px;
+  height: 160px;
+}
+
+.nav-vr{
+  background-image: url(/img/popular-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-monopods{
+  background-image: url(/img/popular-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-cameras{
+  background-image: url(/img/popular-3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-bracelets{
+  background-image: url(/img/popular-4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.nav-clock{
+  background-image: url(/img/popular-5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-drone{
+  background-image: url(/img/poppular-6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-background:hover {
+  background-color: #f0c52e;
+}
+
+.navigation-item a:active{ /*При нажатии картинка в квадрате должна становится полупрозрачной, если задавать opacity, то полупрозрачным становится и фон*/
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.service {
+  background-color: #e5e5e5;
+}
+
+.service h3{
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.01em;
+  font-size: 47px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.description-of-services {
+  list-style: none;
+}
+
+.service p{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  color: #464646;
+}
+
+.service-button button {/*Не знаю, как сделать кнопки для слайдера*/
+  background-color: transparent;
+  border: none;
+  width: 160px;
+  margin-bottom: 24px;
+}
+
+.service-button button:active{
+  color: #f7e184;
+}
+
+.about-us h2{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  color: #000000;
+}
+.about-us p{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.company-partners {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #000000;
+}
+
+.contacts h2{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  color: #000000;
+}
+
+.contacts p{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.user-navigation-footer,
+.site-navigation-footer{
+  list-style: none;
+}
+
+.user-navigation-footer a{
+  font-size: 15px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.site-navigation-footer a{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+
+.footer-user-navigation p,
+.number a{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+
+
+.write-us-form label{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.write-us-form input,
+.write-us-form textarea{
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus{
+  outline: none;
+  background-color: #ffffff;
+  border: 3px solid #f7e296;
+}
+
+.login-link-catalog a{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  color: #000000;
+}
+
+.breadcrumbs{
+  list-style: none;
+}
+
+.breadcrumbs a{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  color: rgba(0,0,0,0.3);
+}
+
+.breadcrumbs a:hover{
+  color: rgba(0,0,0,0.6);
+}
+
+.breadcrumbs a:active{
+  color: rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: none;
+}
+
+.legend-filter{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #dbdbdb;
+  color: #000000;
+}
+
+.legend-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+}
+
+.filter ul{
+  list-style: none;
+  line-height: 19px;
+}
+
+.filter-input:hover{
+  color: #000000;
+  opacity: 0.6;
+}
+
+.filter-input:focus{
+  color: #000000;
+}
+
+.filter-input:disabled + label{
+  color: #a6a6a6;
+}
+.catalog-list {
+  list-style: none;
+}
+
+.catalog h3 a{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  font-weight: 800;
+}
+
+.catalog span{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  color: #464646;
+}
+
+.item-hover-compare {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  color: rgba(0,0,0,0.5);
+}
+
+.item-hover-compare:hover{
+  color: #000000;
+}
+
+.item-hover-compare:focus{
+  color: rgba(0,0,0,0.2);
+}
+
+.pagination-list{
+  list-style: none;
+  background-color: #ebebeb;
+}
+
+.pagination-item a{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+pagination-item a:active{
+  color: #000000;
+}
+
+.pagination-item-current a{
+  color: #000000;
+}
+
+.pagination-control a{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination-back:hover,
+.pagination-forward:hover{
+  background-color: #d9d9d9;
+}
+
+.pagination-back a:active,
+.pagination-forward a:active{
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
+.header-logo:hover {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.filter {
+  background-color: #efefef;
+}
+
+.sorting {
+  background-color: #ebebeb;
+}
+
+.sorting b{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sorting-item {
+  list-style: none;
+}
+
+.sorting-item a{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-item a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-item a:active{
+  color: #000000;
+}
