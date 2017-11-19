@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'gilroylight';
     src: url('gilroylight-webfont.woff2') format('woff2');
     font-weight: normal;
@@ -6,7 +6,7 @@
 
 }
 
-@font-face {
+@font-face{
     font-family: 'gilroyextrabold';
     src: url('gilroyextrabold-webfont.woff2') format('woff2');
     font-weight: normal;
@@ -14,7 +14,7 @@
 
 }
 
-body {
+body{
   margin: 0;
   padding: 0;
   
@@ -26,7 +26,7 @@ body {
   color: #464646;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
@@ -34,18 +34,63 @@ a {
   background-color: #f7e296;
 }
 
+.search-form{
+  display: flex;
+  min-width: 55px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .search{
-  border: none;
+  border: 0;
+  width: 355px;
+  height: 49px;
+  background-color: transparent;
+  color: #000000;
+  padding-left: 40px;
+  opacity: 0.3;
+}
+
+.search:hover{
+  opacity: 0.6;
+}
+
+.search:focus{
+  border-bottom: 2px solid #000000;
+  opacity: 1;
+  outline: 1px transparent;
+}
+
+.search:focus + .search-button{
+  display: block;
+}
+
+.search-button{
+  display: none;
+  width: 84px;
+  height: 49px;
+  border: 2px solid #000000;
   background-color: transparent;
 }
 
-.user-navigation {
+.search-button:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button:active{
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.user-navigation{
   font-size: 15px;
   line-height: 36px;
   color: #000000;
 }
 
-.site-navigation {
+.site-navigation{
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: normal;
@@ -92,7 +137,7 @@ a {
   display: block;
 }
 
-.btn {
+.btn{
   display: inline-block;
   position: relative;
   text-align: center;
@@ -109,11 +154,11 @@ a {
   z-index: 10;
 }
 
-.btn:active {
+.btn:active{
   color: rgba(0, 0, 0, 0.3);
 }
 
-.btn::after {
+.btn::after{
   position: absolute;
   top: 15px;
   left: 0;
@@ -127,7 +172,7 @@ a {
   z-index: -1;
 }
 
-.btn:hover::after {
+.btn:hover::after{
   top: 0;
   height: 100%;
   border: none;
@@ -179,71 +224,7 @@ h2{
   font-weight: 300;
 }
 
-.navigation-menu ul{
-  list-style: none;
-}
-
-.navigation-item a{
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: normal;
-  letter-spacing: 0.01;
-  font-weight: 800;
-  color: #000000;
-}
-
-.nav-background {
-  background-color: #f7e296;
-  width: 160px;
-  height: 160px;
-}
-
-.nav-vr{
-  background-image: url(/img/popular-1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.nav-monopods{
-  background-image: url(/img/popular-2.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.nav-cameras{
-  background-image: url(/img/popular-3.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.nav-bracelets{
-  background-image: url(/img/popular-4.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  
-}
-
-.nav-clock{
-  background-image: url(/img/popular-5.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.nav-drone{
-  background-image: url(/img/poppular-6.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.nav-background:hover {
-  background-color: #f0c52e;
-}
-
-.navigation-item a:active{ /*При нажатии картинка в квадрате должна становится полупрозрачной, если задавать opacity, то полупрозрачным становится и фон*/
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.service {
+.service{
   background-color: #e5e5e5;
 }
 
@@ -255,7 +236,7 @@ h2{
   color: #000000;
 }
 
-.description-of-services {
+.description-of-services{
   list-style: none;
 }
 
@@ -268,7 +249,7 @@ h2{
   color: #464646;
 }
 
-.service-button button {/*Не знаю, как сделать кнопки для слайдера*/
+.service-button button{
   background-color: transparent;
   border: none;
   width: 160px;
@@ -294,7 +275,7 @@ h2{
   color: #464646;
 }
 
-.company-partners {
+.company-partners{
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -318,7 +299,7 @@ h2{
   color: #464646;
 }
 
-.main-footer {
+.main-footer{
   background-color: #464646;
 }
 
@@ -378,7 +359,7 @@ h2{
   color: rgba(0, 0, 0, 0.3);
 }
 
-.page-title {
+.page-title{
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   letter-spacing: 0.01em;
@@ -407,7 +388,7 @@ h2{
   color: rgba(0,0,0,0.1);
 }
 
-fieldset {
+fieldset{
   border: none;
 }
 
@@ -421,7 +402,7 @@ fieldset {
   color: #000000;
 }
 
-.legend-title {
+.legend-title{
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   letter-spacing: 0.01em;
@@ -445,7 +426,7 @@ fieldset {
 .filter-input:disabled + label{
   color: #a6a6a6;
 }
-.catalog-list {
+.catalog-list{
   list-style: none;
 }
 
@@ -465,7 +446,7 @@ fieldset {
   color: #464646;
 }
 
-.item-hover-compare {
+.item-hover-compare{
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
@@ -526,27 +507,27 @@ pagination-item a:active{
   background-color: #d9d9d9;
   color: rgba(0, 0, 0, 0.3);
 }
-.header-logo:hover {
+.header-logo:hover{
   opacity: 0.6;
 }
 
-.header-logo:active {
+.header-logo:active{
   opacity: 0.3;
 }
 
-.footer-logo:hover {
+.footer-logo:hover{
   opacity: 0.6;
 }
 
-.footer-logo:active {
+.footer-logo:active{
   opacity: 0.3;
 }
 
-.filter {
+.filter{
   background-color: #efefef;
 }
 
-.sorting {
+.sorting{
   background-color: #ebebeb;
 }
 
@@ -559,7 +540,7 @@ pagination-item a:active{
   color: #000000;
 }
 
-.sorting-item {
+.sorting-item{
   list-style: none;
 }
 
@@ -577,4 +558,57 @@ pagination-item a:active{
 
 .sorting-item a:active{
   color: #000000;
+}
+
+.navigation-menu ul{
+  
+}
+
+.navigation-menu ul{
+  list-style: none;
+}
+
+.navigation-menu p{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  color: #000000;
+}
+
+.nav-img{
+  width: 160px;
+  height: 160px
+}
+
+.nav-vr{
+  background: url(/img/popular-1.svg) no-repeat center #f7e296;
+}
+
+.nav-monopods{
+  background: url(/img/popular-2.svg) no-repeat center #f7e296;
+}
+
+.nav-cameras{
+  background: url(/img/popular-3.svg) no-repeat center #f7e296;
+}
+
+.nav-bracelets{
+  background: url(/img/popular-4.svg) no-repeat center #f7e296;
+}
+
+.nav-clock{
+  background: url(/img/popular-5.svg) no-repeat center #f7e296;
+}
+
+.nav-drone{
+  background: url(/img/poppular-6.svg) no-repeat center #f7e296;
+}
+
+a:hover > .nav-img{
+  background-color: #f0c52e;
+}
+
+.navigation-menu li:active{
+  opacity: 0.3;
 }
