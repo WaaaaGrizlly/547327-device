@@ -560,11 +560,7 @@ pagination-item a:active{
   color: #000000;
 }
 
-.navigation-menu ul{
-  
-}
-
-.navigation-menu ul{
+/*.navigation-menu ul{
   list-style: none;
 }
 
@@ -612,3 +608,4 @@ a:hover > .nav-img{
 .navigation-menu li:active{
   opacity: 0.3;
 }
+*/
