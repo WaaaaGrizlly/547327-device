@@ -20,21 +20,22 @@
               <input class="search-button" type="submit" value="Найти">
             </form>
             <ul class="header-catalog-items">
-              <li class="header-catalog"><a href="#">Каталог товаров</a>
-                <div class="column">
+              <li class="header-catalog">
+                <a href="#">Каталог товаров</a>
+                <div class="menu-container">
                 <ul class="hidden-catalog-menu">
                   <li><a href="#">Виртуальная реальность</a></li>
                   <li><a href="catalog.html">Моноподы для селфи</a></li>
                   <li><a href="#">Экшн-камеры</a></li>
                 </ul>
-                </div>
-                <div class="column">
+                
+                
                 <ul class="hidden-catalog-menu">      
                   <li><a href="#">Фитнес-браслеты</a></li>
                   <li><a href="#">Умные часы</a></li>
                 </ul>
-                </div>
-                <div class="column">
+                
+                
                 <ul class="hidden-catalog-menu">
                   <li><a href="#">Квадрокоптеры</a></li>
                 </ul>
@@ -59,7 +60,11 @@
     </header>
     <main>
       <section class="product-and-description">
-<!--        <h1 class="visually-hidden">Магазин гаджетов "Device"</h1>-->
+        <div class="slider-background">
+          <span class="line-block"></span>
+        </div>
+        <h1 class="visually-hidden">Магазин гаджетов "Device"</h1>
+        <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
         <input type="radio" id="btn-3" name="toggle">
@@ -70,10 +75,14 @@
       </div>
         <div class="slides">
           <div class="catalog-item">
-            <div class="slider-numbers-1"></div>
+            <div class="catalog-img">
             <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+            </div>
             <div class="slides-description">
+              <div class="slider-numbers-1"></div>
+              <div class="slider-tagline">
             <h2>Делай селфи,<br> как Бен Стиллер!</h2>
+              </div>
             <p class="description">Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
             <a class="btn normal-button" href="#">Подробнее</a>
@@ -92,10 +101,14 @@
             </div>
           </div>
           <div class="catalog-item">
-            <div class="slider-numbers-2"></div>
+            <div class="catalog-img2">
             <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            </div>
             <div class="slides-description">
+              <div class="slider-numbers-2"></div>
+              <div class="slider-tagline">
             <h2>Худеем<br> правильно!</h2>
+              </div>
             <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
             не пропускать занятия и соблюдать диету.</p>
             <a class="btn normal-button" href="#">Подробнее</a>
@@ -110,10 +123,14 @@
             </div>
           </div>
           <div class="catalog-item">
-            <div class="slider-numbers-3"></div>
+            <div class="catalog-img3">
             <img src="img/slider-3.png" width="526" height="334" alt="Палка для селфи">
+            </div>
             <div class="slides-description">
+              <div class="slider-numbers-3"></div>
+              <div class="slider-tagline">
             <h2>Порхает как бабочка,<br> жалит как пчела!</h2>
+              </div>
             <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="btn normal-button" href="#">Подробнее</a>
@@ -129,6 +146,7 @@
             </table>
             </div>
           </div>
+        </div>
         </div>
       </section>
       <section class="navigation-menu">
@@ -195,7 +213,7 @@
                   <div class="text-width">
                     <p class="service-tab-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                   </div>
-                    <div class="img-delivery"><img src="img/delivery.svg" width="136" height="164" alt="delivery">
+                    <div class="img-delivery">
                     </div>
                   </div>
 
@@ -204,7 +222,7 @@
                       <div class="text-width">
                         <p class="service-tab-description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
                       </div>
-                    <div class="img-delivery-2"><img src="img/warranty.svg" width="171" height="195" alt="warranty">
+                    <div class="img-delivery-2">
                     </div>
                   </div>
 
@@ -213,55 +231,31 @@
                       <div class="text-width">
                         <p class="service-tab-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодые условия кредита. Выгодные для нашего банка, разумеется.</p>
                       </div>
-                      <div class="img-delivery-3"><img src="img/credit.svg" width="156" height="188" alt="credit">
+                      <div class="img-delivery-3">
                     </div>
                   </div>
             </div>
         </div>
        </div>
       </section>
-      <!--<section class="service">
-       <h2 class="visually-hidden">Услуги</h2>
-        <div class="service-button">
-          <button class="delivery-button btn checked" type="button">Доставка</button>
-          <button class="warranty-button btn" type="button">Гарантия</button>
-          <button class="credit-button btn" type="button">Кредит</button>
-        </div>
-        <div class="service-description-content">
-          <ul class="description-of-services">
-            <div class="service-description delivery">
-            <li>
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </li>
-            </div>
-            <div class="service-description warranty">
-            <li>
-              <h3>Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.</p>
-            </li>
-            </div>
-            <div class="service-description credit">
-            <li>
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-              условия кредита. Выгодные для нашего банка, разумеется.</p>
-            </li>
-            </div>
-          </ul>
-        </div>
-      </section>-->
       <section class="brands">
-<!--        <h2 class="visually-hidden">Представленные бренды</h2>-->
+        <h2 class="visually-hidden">Представленные бренды</h2>
+        <div class="dji-color">
           <a href="#">
             <img class="logo" src="img/logo-1.png" width="260" height="100" alt="dji"></a>
+        </div>
+        <div class="sp-color">
           <a href="#">
             <img class="logo" src="img/logo-2.png" width="260" height="100" alt="spgadgets"></a>
+        </div>
+        <div class="gopro-color">
           <a href="#">
             <img class="logo" src="img/logo-3.png" width="260" height="100" alt="GoPro"></a>
+        </div>
+        <div class="vive-color">
           <a href="#">
             <img class="logo" src="img/logo-4.png" width="260" height="100" alt="vive"></a>
+        </div>
       </section>
       <div class="fix">
       <section class="about-us">
@@ -303,9 +297,12 @@
         </ul>
           <div class="footer-social">
         <ul>
-          <li><a class="social-btn" href="#">Фейсбук</a></li>
-          <li><a class="social-btn" href="#">Инстаграм</a></li>
-          <li><a class="social-btn" href="#">Твитер</a></li>
+          <li><a class="social-btn" href="#"><span class="visually-hidden">Фейсбук</span><img src="img/fb.svg">
+            </a></li>
+          <li><a class="social-btn" href="#"><span class="visually-hidden">Инстаграм</span><img src="img/instagram.svg">
+            </a></li>
+          <li><a class="social-btn" href="#"><span class="visually-hidden">Твитер</span><img src="img/twitter.svg">
+            </a></li>
         </ul>
       </div>
         </div>
@@ -318,7 +315,7 @@
       <p class="number"><a class="contact-number" href="#">Тел.: +7 (495) 495-95-95</a></p>
       <div class="htmlacademy-logo">
         <a class="htmlacademy-link" href="https://htmlacademy.ru">
-          <img src="#" alt="Разработано: HTML Academy">
+          <img src="/img/logo-html.svg" alt="Разработано: HTML Academy">
         </a>
       </div>
       </div>
