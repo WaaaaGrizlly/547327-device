@@ -267,17 +267,17 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="btn normal-button" href="#">Подробнее о нас</a>
+        <a class="btn modal-button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map-img">
-          <a class="map" href="#">
+          <a href="https://goo.gl/maps/QgjSbWGocoA2" target="_blank" class="js-open-map">
             <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
           </a>
         </div>
-        <a class="btn normal-button" href="#">Напишите нам</a>
+        <a class="btn modal-button js-open-popup" href="./writeus.html">Напишите нам</a>
       </section>
       </div>
     </main>
@@ -322,33 +322,34 @@
       </div>
     </footer>
     
-    <section class="modal modal-write-us">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <p>Ваше имя, email и текст письма.</p>
-      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label><br>
-          <input class="entry-field" type="text" name="name" id="name"  placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p>
-          <label for="email">Ваш email:</label><br>
-          <input class="entry-field" type="text" name="email" id="email" placeholder="Для отправки ответа">
-        </p>
-        <p>
-          <label for="letter-text">Текст письма:</label><br>
-          <textarea class="entry-field" name="letter-text" id="letter-text" rows="8" cols="40" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="btn normal-button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
+    <section class="write-us-popup">
+          <button class="cross-button" type="submit"></button>
+          <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="name-block">
+              <label>Ваше имя:</label>
+              <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+            </div>
+
+            <div class="email-block">
+              <label>Ваше e-mail:</label>
+              <input type="email" name="email" value="" placeholder="Для отправки ответа">
+            </div>
+
+            <div class="text-block">
+              <label>Текст письма:</label>
+              <textarea placeholder="В свободной форме"></textarea>
+            </div>
+
+            <button class="btn normal-button" type="submit">Отправить</button>
+
+          </form>
     </section>
-    
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-        <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-      </p>
-      <button class="modal-close" type="button">Закрыть</button>
+        <section class="map-google">
+          <button class="cross-button" type="submit"></button>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3782.569216264642!2d37.52794335580242!3d55.68674300171296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQu9C40YbQsCDRgdGC0YDQvtC40YLQtdC70LXQuSAxNQ!5e0!3m2!1sru!2sru!4v1487682785556" width="960" height="559" style="border:0" allowfullscreen></iframe>
+
     </section>
+        <script src="js/script.js" async></script>
   </body>
 </html>
